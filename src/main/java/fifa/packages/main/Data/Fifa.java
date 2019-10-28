@@ -9,19 +9,19 @@ import javax.persistence.Id;
 public class Fifa {
 	
 	@Id
-//	@GeneratedValue(strategy = GenerationType.IDENTITY)
-//	private Long id;
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private Long id;
 	private String playername;
 	private String position,league,club,nationality,quality;
 	private int rating;
 	private int price;
 
-//	public Long getId() {
-//		return id;
-//	}
-//	public void setId(Long id) {
-//		this.id = id;
-//	}
+	public Long getId() {
+		return id;
+	}
+	public void setId(Long id) {
+		this.id = id;
+	}
 	public String getPlayername() {
 		return playername;
 	}
