@@ -56,9 +56,10 @@ public ArrayList<Fifa> findByPriceBetween(@PathVariable int m11,@PathVariable in
 @DeleteMapping("/deleteByPlayername/{playername}")
 public String deleteByPlayername(@PathVariable String playername) {
 	Fifa temp = (repo.findByPlayername(playername));
+	
 repo.delete(temp);
 //	Fifa file = repo.deleteByPlayername(id);
-//if(file != null){
+
 //	repo.delete(file);
 //}
 //else {
